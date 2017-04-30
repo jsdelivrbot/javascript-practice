@@ -1,14 +1,18 @@
 describe("test the functionality of arrMyInject", function(){
     
-    it( 'with two matches', function(){
-        expect(arrMyInject()).toEqual();
+     beforeEach(() => {
+        const NUMS = [1, 2, 3, 4, 5];
     });
     
-    it( 'with no matches', function(){
-        expect(arrMyInject()).toEqual();
+    it( 'with addition', function(){
+        expect(NUMS.myInject((total, item) => total + item )).toEqual(15);
     });
-    it( 'with two unique matches', function(){
-        expect(arrMyInject()).toEqual();
+    
+    it( 'with mulitplication', function(){
+        expect(NUMS.myInject((total, item) => total * item )).toEqual(120);
+    });
+    it( 'with subtraction', function(){
+         expect(NUMS.myInject((total, item) => total - item )).toEqual(-13);
     });
   
    

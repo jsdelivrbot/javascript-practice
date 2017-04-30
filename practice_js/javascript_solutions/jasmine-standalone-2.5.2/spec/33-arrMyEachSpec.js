@@ -1,15 +1,21 @@
 describe("test the functionality of arrMyEach", function(){
     
-    it( 'with two matches', function(){
-        expect(arrMyEach()).toEqual();
+    beforeEach(() => {
+        const NUMS = [1, 2, 3, 4, 5];
     });
     
-    it( 'with no matches', function(){
-        expect(arrMyEach()).toEqual();
+    it( 'with square', function(){
+        expect(NUMS.myEach(num => {
+            num * num;
+        })).toEqual([1,4,9,16,25]);
     });
-    it( 'with two unique matches', function(){
-        expect(arrMyEach()).toEqual();
+    
+    it( 'with cube', function(){
+        expect(NUMS.myEach(num => {
+            num * num * num;
+        })).toEqual([1,8,27,64,125]);
     });
+
   
    
 });

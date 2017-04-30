@@ -1,14 +1,14 @@
 describe("test the functionality of argsSums", function(){
     
-    it( 'with two matches', function(){
-        expect(argsSums()).toEqual();
+    it( 'with 4 arguments', function(){
+        expect(argsSums(1,2,3,4)).toEqual(10);
     });
     
-    it( 'with no matches', function(){
-        expect(argsSums()).toEqual();
+    it( 'with 3 arguments', function(){
+        expect(argsSums(1,2,3)).toEqual(6);
     });
-    it( 'with two unique matches', function(){
-        expect(argsSums()).toEqual();
+    it( 'with 5 arguments', function(){
+        expect(argsSums(1,2,3,4,5)).toEqual(15);
     });
   
    

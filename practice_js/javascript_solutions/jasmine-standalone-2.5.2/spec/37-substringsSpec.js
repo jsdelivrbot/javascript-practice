@@ -1,14 +1,14 @@
 describe("test the functionality of substrings", function(){
     
-    it( 'with two matches', function(){
-        expect(substrings()).toEqual();
+    it( 'with cat', function(){
+        expect(substrings("cat")).toEqual(["c","ca","cat","a","at","t"]);
     });
     
-    it( 'with no matches', function(){
-        expect(substrings()).toEqual();
+    it( 'with pan', function(){
+        expect(substrings("pan")).toEqual(["p","pa","pan","a","an","n"]);
     });
-    it( 'with two unique matches', function(){
-        expect(substrings()).toEqual();
+    it( 'with duck', function(){
+        expect(substrings("duck")).toEqual(["d","du","duc","duck","u","uc","uck","c","ck","k"]);
     });
   
    
